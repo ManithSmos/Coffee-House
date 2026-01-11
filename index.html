@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <style>
       * {
         box-sizing: border-box;
@@ -14,6 +13,11 @@
       body {
         font-family: Arial, sans-serif;
         background-color: rgb(237, 238, 239);
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
       }
       .navbar {
         background-color: #fff;
@@ -225,13 +229,14 @@
     </style>
   </head>
   <body>
+    <section id="home"></section>
     <header>
       <nav class="navbar">
         <h2 style="color: #5a4545">☕ Bean & Brew</h2>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
+          <li><a href="#Menu">Menu</a></li>
           <li><a href="#contact">Order now</a></li>
         </ul>
       </nav>
@@ -242,14 +247,15 @@
         <p class="text-1">Premier Coffee Experience for the true enthusiast</p>
       </div>
     </main>
-
     <footer>
       <div class="Fv">
-        <h1 style="color: #5a4545; text-align: center">Our Favorites</h1>
+        <h1 style="color: #5a4545; text-align: center" id="Menu">
+          Our Favorites
+        </h1>
       </div>
       <div class="all-menu">
         <div class="img-card">
-          <img src="photo_2026-01-11_13-31-21.jpg" alt="" />
+          <img src="./asset/image/photo_2026-01-11_13-31-21.jpg" alt="" />
           <span class="popular">Popular</span>
           <div>
             <h3>Classic latte</h3>
@@ -258,7 +264,7 @@
           </div>
         </div>
         <div class="img-card">
-          <img src="photo_2026-01-11_13-31-30.jpg" alt="" />
+          <img src="./asset/image/photo_2026-01-11_13-31-30.jpg" alt="" />
           <div>
             <h3>Cappuccino</h3>
             <p>Rich espresso with thick foam.</p>
@@ -266,7 +272,7 @@
           </div>
         </div>
         <div class="img-card">
-          <img src="photo_2026-01-11_13-31-36.jpg" alt="" />
+          <img src="./asset/image/photo_2026-01-11_13-31-36.jpg" alt="" />
           <div>
             <h3>Choco Mocha</h3>
             <p>espresso with chocolate and milk.</p>
@@ -277,21 +283,27 @@
       <!-- about us -->
       <div class="Fv1">
         <h1 style="color: #5a4545; text-align: center" id="about">About Us</h1>
-        <p>We are a passionate team of coffee lovers dedicated to bringing you the finest coffee experience. Our journey began with a simple idea: to create a space where every cup tells a story.</p>
+        <p>
+          We are a passionate team of coffee lovers dedicated to bringing you
+          the finest coffee experience. Our journey began with a simple idea: to
+          create a space where every cup tells a story.
+        </p>
       </div>
       <!-- Visit us -->
-       <div class="Fv2">
-        <h1 style="color: #5a4545; text-align: center" id="contact">Visit Us</h1>
-        <p>123 Coffee Lane, Brewtown, USA<br/>
-        Phone: (123) 456-7890<br/>
-        Email:
-       </div>
+      <div class="Fv2">
+        <h1 style="color: #5a4545; text-align: center" id="contact">
+          Visit Us
+        </h1>
+        <p>
+          123 Coffee Lane, Brewtown, USA<br />
+          Phone: (123) 456-7890<br />
+          Email:
+        </p>
+      </div>
 
-       <div class="code">
+      <div class="code">
         <p>©️ 2026 Bean & Brew Coffee house.</p>
-       </div>
+      </div>
     </footer>
   </body>
 </html>
-
-
