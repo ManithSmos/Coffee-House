@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(237, 238, 239);
+      }
+      header {
+      }
+      .navbar {
+        background-color: #fff;
+        padding: 1rem 2rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+      .navbar a:hover {
+        color: #55595d;
+      }
+      .navbar li:last-child a {
+        background-color: #3d3333;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+      }
+      .navbar li:last-child a:hover {
+        background-color: #5a4545;
+      }
+      .background-color {
+        background-image: url(https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=1600);
+        height: 80vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .text {
+        color: #fff;
+        font-size: 3rem;
+        padding: 1rem 2rem;
+        margin: auto;
+        text-align: center;
+      }
+      .text-1 {
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        margin: auto;
+        text-align: center;
+      }
+      .Fv {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .all-menu {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+        object-fit: cover;
+        box-shadow: rgba(0, 0, 0, 0.2);
+      }
+      .img-card {
+        float: left;
+        border: solid 1px #e4dddd;
+        margin: 20px;
+        border-radius: 20px;
+        text-align: center;
+        overflow: hidden;
+        padding-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.2);
+      }
+      .img-card h3 {
+        margin: 20px 0 10px 0;
+        color: #5a4545;
+      }
+      .img-card p {
+        margin: 0 20px 10px 20px;
+        color: #7a6a6a;
+      }
+      .img-card img {
+        justify-self: center;
+        width: 300px;
+        height: 200px;
+        border-radius: 10px 10px 0px 0px;
+        object-fit: cover;
+        display: flex;
+        box-shadow: rgba(0, 0, 0, 0.2);
+      }
+      .img-card:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+      }
+      .popular {
+        background-color: #ff6b6b;
+        color: white;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        border-radius: 4px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      .price {
+        margin-bottom: 10px;
+        color: #5a4545;
+        font-weight: bold;
+        font-size: 1.2rem;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .Fv1 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: white;
+      }
+      .Fv1 p {
+        max-width: 800px;
+        margin: 20px auto;
+        color: #7a6a6a;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        text-align: center;
+      }
+      .Fv2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+      }
+      .Fv2 p {
+        max-width: 800px;
+        margin: 20px auto;
+        color: #7a6a6a;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        text-align: center;
+      }
+      .code{
+        height: 100px;
+        background-color: #1b1b24;
+      }
+      .code p{
+        color: white;
+        text-align: center;
+        padding: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 style="color: #5a4545">☕ Bean & Brew</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Order now</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="background-color">
+      <div class="img">
+        <h1 class="text">Start Your Day Right</h1>
+        <p class="text-1">Premier Coffee Experience for the true enthusiast</p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="Fv">
+        <h1 style="color: #5a4545; text-align: center">Our Favorites</h1>
+      </div>
+      <div class="all-menu">
+        <div class="img-card">
+          <img src="./asset/image/photo_2026-01-11_13-31-21.jpg" alt="" />
+          <span class="popular">Popular</span>
+          <div>
+            <h3>Classic latte</h3>
+            <p>Smooth espresso with steamed milk.</p>
+            <span class="price">$4.50</span>
+          </div>
+        </div>
+        <div class="img-card">
+          <img src="./asset/image/photo_2026-01-11_13-31-30.jpg" alt="" />
+          <div>
+            <h3>Cappuccino</h3>
+            <p>Rich espresso with thick foam.</p>
+            <span class="price">$4.00</span>
+          </div>
+        </div>
+        <div class="img-card">
+          <img src="./asset/image/photo_2026-01-11_13-31-36.jpg" alt="" />
+          <div>
+            <h3>Choco Mocha</h3>
+            <p>espresso with chocolate and milk.</p>
+            <span class="price">$4.50</span>
+          </div>
+        </div>
+      </div>
+      <!-- about us -->
+      <div class="Fv1">
+        <h1 style="color: #5a4545; text-align: center" id="about">About Us</h1>
+        <p>We are a passionate team of coffee lovers dedicated to bringing you the finest coffee experience. Our journey began with a simple idea: to create a space where every cup tells a story.</p>
+      </div>
+      <!-- Visit us -->
+       <div class="Fv2">
+        <h1 style="color: #5a4545; text-align: center" id="contact">Visit Us</h1>
+        <p>123 Coffee Lane, Brewtown, USA<br/>
+        Phone: (123) 456-7890<br/>
+        Email:
+       </div>
+
+       <div class="code">
+        <p>©️ 2026 Bean & Brew Coffee house.</p>
+       </div>
+    </footer>
+  </body>
+</html>
