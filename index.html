@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <style>
       * {
         box-sizing: border-box;
@@ -13,8 +14,6 @@
       body {
         font-family: Arial, sans-serif;
         background-color: rgb(237, 238, 239);
-      }
-      header {
       }
       .navbar {
         background-color: #fff;
@@ -88,15 +87,17 @@
         object-fit: cover;
         box-shadow: rgba(0, 0, 0, 0.2);
       }
+
       .img-card {
-        float: left;
         border: solid 1px #e4dddd;
         margin: 20px;
         border-radius: 20px;
         text-align: center;
         overflow: hidden;
         padding-bottom: 20px;
-        box-shadow: rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        max-width: 100%;
       }
       .img-card h3 {
         margin: 20px 0 10px 0;
@@ -155,7 +156,6 @@
       .Fv2 {
         padding-top: 50px;
         padding-bottom: 50px;
-
       }
       .Fv2 p {
         max-width: 800px;
@@ -165,14 +165,62 @@
         line-height: 1.6;
         text-align: center;
       }
-      .code{
+      .code {
         height: 100px;
         background-color: #1b1b24;
       }
-      .code p{
+      .code p {
         color: white;
         text-align: center;
         padding: 40px;
+      }
+      @media (max-width: 992px) {
+        .text {
+          font-size: 2.5rem;
+        }
+        .background-color {
+          height: 60vh;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          gap: 1rem;
+          padding: 1rem;
+        }
+
+        .navbar ul {
+          gap: 0.8rem;
+          font-size: 0.9rem;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .text {
+          font-size: 1.8rem;
+        }
+
+        .text-1 {
+          font-size: 1.1rem;
+        }
+
+        .img-card {
+          float: none;
+          width: 90%;
+          margin: 10px auto;
+        }
+
+        .img-card img {
+          width: 100%;
+          height: auto;
+        }
+
+        .Fv1 p,
+        .Fv2 p {
+          padding: 0 20px;
+          font-size: 1rem;
+        }
       }
     </style>
   </head>
@@ -245,4 +293,5 @@
     </footer>
   </body>
 </html>
+
 
